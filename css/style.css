@@ -79,6 +79,16 @@ ul {
     color: #404bbf;
 }
 
+.menu-nav-container.colored {
+    color: #404bbf;
+}
+
+.transition {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .menu-nav.current::after {
     content: '';
     position: absolute;
@@ -160,7 +170,7 @@ ul {
 }
 
 .back-hero-img {
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/people-office\ 1.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -198,6 +208,9 @@ ul {
     border-radius: 4px;
     margin: 0 auto;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button:hover, button:focus {
@@ -211,6 +224,9 @@ button:hover, button:focus {
     padding-bottom: 120px;
 }
 
+.subtitle-list {
+    list-style-type: none;
+}
 
 .visually-hidden {
     position: absolute;
@@ -376,8 +392,20 @@ button:hover, button:focus {
     row-gap: 48px;
 }
 
-.portfolio-item-container {
+.port-item-container {
     flex-basis: calc(1128px / 6);
+}
+
+.overlay:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
+        0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay:hover p {
+    transform: translateY(0%);
 }
 
 .app-container {
@@ -402,6 +430,28 @@ button:hover, button:focus {
     line-height: 1.5;
     color: #434455;
 }
+
+.portfolio-animation {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-animation-text {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
 /*------------ FOOTER---------------- */
 
