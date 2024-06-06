@@ -65,7 +65,6 @@ ul {
 .menu-nav-container {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .contacts-container {
@@ -123,6 +122,7 @@ ul {
 }
 
 .menu-nav {
+    display: block;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.02em;
@@ -403,9 +403,6 @@ button:hover, button:focus {
 .overlay:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
         0 1px 6px 0 rgba(46, 47, 66, 0.08);
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay:hover p {
@@ -504,7 +501,6 @@ button:hover, button:focus {
 }
 
 .footer-first {
-    padding: 100px 0;
     margin-right: 120px;
 }
 
