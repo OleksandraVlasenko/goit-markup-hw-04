@@ -101,10 +101,6 @@ ul {
     background-color: #404bbf
 }
 
-.menu-nav-container.color {
-    color: #404bbf;
-}
-
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -173,8 +169,7 @@ ul {
 }
 
 .back-hero-img {
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/people-office\ 1.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -397,6 +392,12 @@ button:hover, button:focus {
 
 .port-item-container {
     flex-basis: calc(1128px / 6);
+}
+
+.overlay {
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay:hover {
